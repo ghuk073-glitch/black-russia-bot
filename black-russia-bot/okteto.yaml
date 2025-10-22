@@ -1,0 +1,11 @@
+name: black-russia-bot
+autocreate: true
+image: okteto.dev/telegram-bot:latest
+command: ["python", "bot.py"]
+environment:
+  - name: BOT_TOKEN
+    value: YOUR_BOT_TOKEN_HERE
+resources:
+  limits:
+    cpu: 1000m
+    memory: 2Gi
